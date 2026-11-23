@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#090909">
+<meta name="description" content="تاريخنا — رحلة لفهم التاريخ مع الأستاذ عادل عبدالكريم رشوان.">
+<title>تاريخنا | الأستاذ عادل عبدالكريم رشوان</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🏛️%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&family=Amiri:wght@700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#090909;--panel:#12110e;--gold:#d8b45a;--gold2:#f6e4a6;--muted:#b7b0a0;--line:rgba(216,180,90,.23);--white:#f8f4e9}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--white);font-family:'Cairo',sans-serif}a{color:inherit;text-decoration:none}button{font:inherit}
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+.topline{height:3px;background:linear-gradient(90deg,transparent,var(--gold2),var(--gold),transparent)}
+header{position:sticky;top:0;z-index:20;background:rgba(9,9,9,.94);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.nav{max-width:1180px;margin:auto;padding:14px 22px;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:12px;font-weight:900}
+.brandmark{width:44px;height:44px;border:1px solid var(--gold);color:var(--gold2);display:grid;place-items:center;border-radius:50%;font-size:22px;box-shadow:0 0 22px #d8b45a1c}
+.brand small{display:block;color:var(--muted);font-size:12px;font-weight:500}
+.navlinks{display:flex;gap:20px;color:#ddd4c0;font-size:14px;flex-wrap:wrap}
+.navlinks a:hover{color:var(--gold2)}
+.navbtn,.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border:1px solid var(--gold);padding:11px 20px;border-radius:5px;color:#17120a;background:linear-gradient(135deg,var(--gold2),var(--gold));font-weight:800;cursor:pointer;transition:.25s}
+.navbtn:hover,.btn:hover{transform:translateY(-2px);box-shadow:0 9px 28px #d8b45a2a}
+.btn.secondary{background:transparent;color:var(--gold2)}
+.hero{position:relative;overflow:hidden;min-height:600px;display:flex;align-items:center;border-bottom:1px solid var(--line);padding:0;background:radial-gradient(ellipse at 78% 42%,#5c431a35 0,transparent 34%),radial-gradient(ellipse at 15% 80%,#3e301a28 0,transparent 30%),linear-gradient(110deg,#080808 10%,#14110b 58%,#090909 100%)}
+.hero-inner{position:relative;z-index:1;max-width:1180px;width:100%;margin:auto;padding:80px 22px;display:grid;grid-template-columns:1.2fr .8fr;align-items:center;gap:45px}
+.eyebrow{color:var(--gold2);font-size:13px;font-weight:800;display:flex;align-items:center;gap:10px}
+.eyebrow:before{content:"";width:38px;height:1px;background:var(--gold)}
+h1{font-size:clamp(34px,5vw,60px);line-height:1.25;margin:18px 0;font-weight:900}
+h1 span{display:block;color:var(--gold2);text-shadow:0 0 36px #d8b45a22}
+.hero p{max-width:610px;color:#c9c1af;font-size:17px;line-height:2;margin:0 0 28px}
+.hero-actions{display:flex;flex-wrap:wrap;gap:12px}
+.hero-art{min-height:360px;display:grid;place-items:center}
+.arch{width:min(100%,330px);height:360px;border:1px solid #d8b45a77;border-radius:180px 180px 8px 8px;padding:13px;box-shadow:0 0 70px #d8b45a0c,inset 0 0 40px #d8b45a0b}
+.arch-inner{height:100%;border-radius:165px 165px 4px 4px;display:flex;align-items:center;justify-content:center;flex-direction:column;text-align:center;background:radial-gradient(ellipse at center,#6a4d1d55,transparent 62%),linear-gradient(180deg,#211a0e,#0c0b08);padding:20px}
+.eye{width:120px;height:90px;color:var(--gold2);filter:drop-shadow(0 0 14px #d8b45a66)}
+.arch-inner strong{font-family:'Amiri',serif;font-size:26px;color:var(--gold2);margin-top:14px}
+.arch-inner small{color:#d2c5a3;margin-top:8px}
+.stats{border-bottom:1px solid var(--line);background:#0d0c09}
+.stats-inner{max-width:1180px;margin:auto;padding:24px 22px;display:grid;grid-template-columns:repeat(3,1fr);gap:15px}
+.stat{text-align:center;padding:10px;border-left:1px solid var(--line)}
+.stat:last-child{border-left:0}
+.stat strong{display:block;color:var(--gold2);font-size:22px}
+.stat span{font-size:13px;color:var(--muted)}
+section{padding:80px 22px}
+section[id]{scroll-margin-top:76px}
+.container{max-width:1180px;margin:auto}
+.section-head{text-align:center;max-width:720px;margin:0 auto 42px}
+.kicker{color:var(--gold);font-size:13px;font-weight:800}
+.section-head h2{font-size:clamp(28px,4vw,42px);margin:10px 0 12px}
+.section-head p{color:var(--muted);line-height:1.9;margin:0}
+.features{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.feature{padding:27px;background:linear-gradient(145deg,#17150f,#0d0d0b);border:1px solid var(--line);border-radius:9px;transition:.25s}
+.feature:hover{transform:translateY(-5px);border-color:#d8b45a88}
+.feature-icon{width:50px;height:50px;display:grid;place-items:center;border:1px solid #d8b45a66;color:var(--gold2);font-size:22px;border-radius:7px;margin-bottom:18px;background:#d8b45a0a}
+.feature h3{font-size:19px;margin:0 0 9px}
+.feature p{color:var(--muted);line-height:1.9;font-size:14px;margin:0}
+.chapters{background:linear-gradient(180deg,#0c0b09,#12100b,#0a0a09);border-block:1px solid var(--line)}
+.chapter-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+.chapter{display:flex;gap:18px;align-items:flex-start;padding:25px;background:#0b0b0a;border:1px solid var(--line);border-radius:8px}
+.chapter-num{flex-shrink:0;width:54px;height:62px;display:grid;place-items:center;color:var(--gold2);font-family:Georgia,serif;font-size:24px;border:1px solid #d8b45a6b;background:linear-gradient(145deg,#3b2d12,#12100b);clip-path:polygon(0 0,100% 0,100% 80%,50% 100%,0 80%)}
+.chapter h3{margin:2px 0 8px;font-size:18px}
+.chapter p{margin:0;color:var(--muted);font-size:14px;line-height:1.8}
+.tag{display:inline-block;color:var(--gold2);border:1px solid #d8b45a55;border-radius:3px;padding:3px 9px;font-size:12px;margin-top:12px;margin-inline-end:6px}
+.teacher{display:grid;grid-template-columns:.8fr 1.2fr;gap:40px;align-items:center}
+.teacher-card{border:1px solid var(--line);padding:32px;text-align:center;background:radial-gradient(circle at 50% 0,#60491e2c,transparent 60%),#11100c;border-radius:10px}
+.teacher-emblem{margin:0 auto 20px;width:120px;height:120px;border:1px solid var(--gold);border-radius:50%;display:grid;place-items:center;font-size:52px;color:var(--gold2);box-shadow:inset 0 0 0 7px #d8b45a10}
+.teacher-card h3{font-size:22px;margin:0 0 8px;color:var(--gold2)}
+.teacher-card p{color:var(--muted);margin:0;font-size:14px}
+.teacher-copy h2{font-size:clamp(28px,4vw,40px);margin:12px 0 18px}
+.teacher-copy p{color:#c4bcaa;line-height:2}
+.pts{list-style:none;padding:0;margin:18px 0 0;display:grid;gap:10px}
+.pts li{position:relative;padding-inline-start:26px;color:#c4bcaa;line-height:1.9}
+.pts li:before{content:"✦";position:absolute;inset-inline-start:0;color:var(--gold)}
+.pts b{color:var(--gold2)}
+.quiz-box{max-width:760px;margin:auto;border:1px solid var(--line);background:#11100c;padding:32px;border-radius:10px}
+.quiz-q{font-size:19px;font-weight:700;margin:0 0 20px;line-height:1.7}
+.quiz-opts{display:grid;gap:12px}
+.quiz-opt{display:flex;align-items:center;gap:12px;width:100%;text-align:right;padding:14px 18px;background:#090909;border:1px solid var(--line);color:var(--white);border-radius:6px;cursor:pointer;transition:.2s;font-size:16px}
+.quiz-opt:hover:not(:disabled){border-color:var(--gold)}
+.quiz-opt:disabled{cursor:default}
+.quiz-opt b{flex-shrink:0;width:30px;height:30px;display:grid;place-items:center;border:1px solid #d8b45a66;border-radius:50%;color:var(--gold2);font-size:14px}
+.quiz-opt.correct{border-color:#4caf7a;background:#4caf7a1f}.quiz-opt.correct b{background:#4caf7a;border-color:#4caf7a;color:#08140d}
+.quiz-opt.wrong{border-color:#e5645a;background:#e5645a1c}.quiz-opt.wrong b{background:#e5645a;border-color:#e5645a;color:#1a0807}
+.quiz-res{margin-top:18px;padding:14px;border-radius:6px;display:none;line-height:1.8;font-size:15px}
+.quiz-res.show{display:block}
+.quiz-res.ok{background:#4caf7a1c;border:1px solid #4caf7a}.quiz-res.ok strong{color:#6fd39a}
+.quiz-res.bad{background:#e5645a1a;border:1px solid #e5645a}.quiz-res.bad strong{color:#ff8b82}
+footer{border-top:1px solid var(--line);padding:34px 22px;text-align:center;color:var(--muted);font-size:14px;line-height:2;background:#070706}
+footer a{color:var(--gold2);text-decoration:underline}
+.contact{display:flex;justify-content:center;gap:22px;flex-wrap:wrap;margin:6px 0}
+.demo-note{font-size:12px;opacity:.75;margin-top:8px}
+@media(max-width:850px){.hero-inner,.teacher,.features,.chapter-grid,.stats-inner{grid-template-columns:1fr}.stat{border-left:0;border-bottom:1px solid var(--line)}.stat:last-child{border-bottom:0}section{padding:60px 18px}.quiz-box{padding:22px 16px}.hero-art{order:-1;min-height:300px}.arch{height:300px;width:270px}.eye{width:96px;height:72px}.nav{padding:10px 18px}.navbtn{display:none}.navlinks{order:3;width:100%;flex-wrap:nowrap;overflow-x:auto;white-space:nowrap;gap:18px;padding-bottom:4px}section[id]{scroll-margin-top:110px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important}}
+</style>
+</head>
+<body>
+<div class="topline"></div>
+<header>
+  <div class="nav">
+    <a href="#home" class="brand">
+      <div class="brandmark">🏛</div>
+      <div>تاريخنا<small>المعرفة تصنع الوعي</small></div>
+    </a>
+    <nav class="navlinks" aria-label="القائمة الرئيسية">
+      <a href="#home">الرئيسية</a>
+      <a href="#about">عن الأستاذ</a>
+      <a href="#curriculum">أقسام المنهج</a>
+      <a href="#features">مميزاتنا</a>
+      <a href="#quiz">اختبار تجريبي</a>
+    </nav>
+    <a href="#curriculum" class="navbtn">ابدأ المذاكرة</a>
+  </div>
+</header>
+
+<main>
+<section id="home" class="hero">
+  <div class="hero-inner">
+    <div>
+      <div class="eyebrow">منصة التاريخ للثانوية العامة</div>
+      <h1>افهم التاريخ كحكاية <span>مش مجرد تواريخ للحفظ</span></h1>
+      <p>رحلة تعليمية متكاملة مع الأستاذ عادل عبدالكريم رشوان، بنبسط فيها أحداث التاريخ بأسلوب شيّق، خرائط ذهنية، وتدريبات مستمرة تأهلك للدرجة النهائية.</p>
+      <div class="hero-actions">
+        <a href="#curriculum" class="btn">اكتشف المنهج ←</a>
+        <a href="#quiz" class="btn secondary">جرّب سؤال تفاعلي</a>
+      </div>
+    </div>
+    <div class="hero-art" aria-hidden="true">
+      <div class="arch">
+        <div class="arch-inner">
+          <svg class="eye" viewBox="0 0 120 90" width="120" height="90" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M8 42Q60-4 112 42Q60 88 8 42Z"/><circle cx="60" cy="42" r="17"/><circle cx="60" cy="42" r="6" fill="currentColor"/><path d="M22 20Q60-6 98 20"/><path d="M52 66Q50 82 36 86M70 64Q76 78 92 76"/></svg>
+          <strong>تاريخنا</strong>
+          <small>الأستاذ عادل عبدالكريم رشوان</small>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="stats">
+  <div class="stats-inner">
+    <div class="stat"><strong><bdi dir="ltr">+12</bdi> سنة</strong><span>خبرة في تدريس مادة التاريخ</span></div>
+    <div class="stat"><strong><bdi dir="ltr">+3,500</bdi> طالب</strong><span>حققوا أعلى الدرجات بالنظام الحديث</span></div>
+    <div class="stat"><strong><bdi dir="ltr">+120</bdi> درس</strong><span>وخريطة ذهنية لتبسيط المنهج</span></div>
+  </div>
+</div>
+
+<section id="about">
+  <div class="container teacher">
+    <div class="teacher-card">
+      <div class="teacher-emblem">📜</div>
+      <h3>أ. عادل عبدالكريم رشوان</h3>
+      <p>معلم أول خبير في مادة التاريخ</p>
+    </div>
+    <div class="teacher-copy">
+      <div class="kicker">نبذة تعريفية</div>
+      <h2>منهجية قائمة على الفهم والربط والتحليل</h2>
+      <p>مُعلّم خبير في مادة التاريخ بخبرة تمتد لأكثر من 12 عاماً في تبسيط المناهج الدراسية للمرحلة الثانوية. نعتمد في شرحنا على الفهم العميق بعيداً عن الحفظ والتلقين، لمساعدة الطلاب على التفوق بثقة.</p>
+      <ul class="pts">
+        <li><b>الفهم:</b> نبدأ بالحكاية ثم ننتقل للتفاصيل، فيخرج الطالب فاهماً القصة كاملة.</li>
+        <li><b>الربط:</b> نربط الأحداث ببعضها، والأسباب بنتائجها، بدل حفظها منفصلة.</li>
+        <li><b>التحليل:</b> نتدرّب على تحليل الخرائط والنصوص التاريخية كما يأتي في الامتحان.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="curriculum" class="chapters">
+  <div class="container">
+    <div class="section-head">
+      <div class="kicker">بوابتك إلى المنهج</div>
+      <h2>أقسام المنهج الدراسي</h2>
+      <p>أربعة أقسام مرتبة تأخذك من الأساسيات إلى المراجعة النهائية.</p>
+    </div>
+    <div class="chapter-grid">
+      <article class="chapter"><div class="chapter-num">01</div><div><h3>الوحدة الأولى: الحضارة المصرية القديمة</h3><p>دراسة شاملة لعوامل قيام الحضارة، الحياة السياسية والاقتصادية، وأهم الإنجازات الثقافية والمعمارية لمصر الفرعونية.</p><span class="tag">6 دروس</span><span class="tag">3 اختبارات تقييمية</span></div></article>
+      <article class="chapter"><div class="chapter-num">02</div><div><h3>الوحدة الثانية: تاريخ مصر الحديث والمعاصر</h3><p>تحليل تفصيلي لأهم المحطات التاريخية بداية من الحملة الفرنسية، وبناء الدولة الحديثة، وحتى ثورات التحرر الوطني.</p><span class="tag">8 دروس</span><span class="tag">4 اختبارات تقييمية</span></div></article>
+      <article class="chapter"><div class="chapter-num">03</div><div><h3>الوحدة الثالثة: تاريخ العرب والعالم</h3><p>فهم العلاقات الدولية، التحولات السياسية في الوطن العربي، وأثرها على تشكيل خريطة العالم المعاصر.</p><span class="tag">5 دروس</span><span class="tag">3 اختبارات تقييمية</span></div></article>
+      <article class="chapter"><div class="chapter-num">04</div><div><h3>المراجعات النهائية</h3><p>ملخصات شاملة، خرائط ذهنية لأهم التواريخ والشخصيات، وحل نماذج امتحانات الأعوام السابقة بالنظام الحديث.</p><span class="tag">10 مراجعات شاملة</span></div></article>
+    </div>
+  </div>
+</section>
+
+<section id="features">
+  <div class="container">
+    <div class="section-head">
+      <div class="kicker">مميزات المنصة</div>
+      <h2>ليه تذاكر التاريخ على منصتنا؟</h2>
+      <p>كل أداة هنا موجودة لهدف واحد: تفهم التاريخ بدل ما تحفظه.</p>
+    </div>
+    <div class="features">
+      <div class="feature"><div class="feature-icon">🧠</div><h3>خرائط ذهنية مبسطة</h3><p>تلخيص كل درس في خريطة بصرية تربط الأسباب بالنتائج وتسهّل المراجعة السريعة.</p></div>
+      <div class="feature"><div class="feature-icon">📝</div><h3>بنك أسئلة بالنظام الحديث</h3><p>تدريبات تفاعلية تقيس الفهم والتحليل والاستنتاج بعد كل حصة مباشرة.</p></div>
+      <div class="feature"><div class="feature-icon">📈</div><h3>متابعة وتقييم مستمر</h3><p>اختبارات دورية لتحديد نقاط القوة والضعف ومساعدتك في تحسين مستواك باستمرار.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="quiz" class="chapters">
+  <div class="container">
+    <div class="section-head">
+      <div class="kicker">اختبار تجريبي تفاعلي</div>
+      <h2>اختبر معلوماتك التاريخية الآن</h2>
+      <p>سؤال سريع من الحضارة المصرية القديمة. اختر إجابتك وشوف النتيجة فوراً.</p>
+    </div>
+    <div class="quiz-box">
+      <h3 class="quiz-q" id="quizQ">أيٌّ من العوامل التالية كان له الدور الأكبر في استقرار المصري القديم وقيام الحضارة الزراعية؟</h3>
+      <div class="quiz-opts" role="group" aria-labelledby="quizQ">
+        <button type="button" class="quiz-opt"><b aria-hidden="true">أ</b><span>وجود نهر النيل وخصوبة التربة</span></button>
+        <button type="button" class="quiz-opt"><b aria-hidden="true">ب</b><span>الموقع الجغرافي المتميز فقط</span></button>
+        <button type="button" class="quiz-opt"><b aria-hidden="true">ج</b><span>وفرة المعادن والصخور</span></button>
+        <button type="button" class="quiz-opt"><b aria-hidden="true">د</b><span>اعتدال المناخ طوال العام</span></button>
+      </div>
+      <div class="quiz-res" id="quizRes" role="status" aria-live="polite"></div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div>© <span id="year"></span> تاريخنا — الأستاذ عادل عبدالكريم رشوان</div>
+  <div class="contact">
+    <span>للتواصل:</span>
+    <a href="https://wa.me/201000000000" target="_blank" rel="noopener">واتساب <bdi dir="ltr">0100 000 0000</bdi></a>
+    <a href="https://www.facebook.com/" target="_blank" rel="noopener">صفحة الفيسبوك</a>
+  </div>
+  <div class="demo-note">هذا الموقع نموذج عرض (Demo)، وأرقام وبيانات التواصل المعروضة تجريبية.</div>
+</footer>
+
+<script>
+(function(){
+  document.getElementById('year').textContent=new Date().getFullYear();
+  var opts=[].slice.call(document.querySelectorAll('.quiz-opt')),res=document.getElementById('quizRes'),CORRECT=0;
+  var OK='إجابة ممتازة! نهر النيل وتوافر التربة الخصبة هما الأساس الذي ساعد المصري القديم على الاستقرار وبناء حضارته.';
+  var BAD='إجابة غير دقيقة، حاول مرة تانية! فكّر في العامل الأساسي اللي خلى المصري القديم يسيب الهضاب ويستقر في الوادي.';
+  function show(kind,text){
+    res.className='quiz-res show '+kind;res.textContent='';
+    var s=document.createElement('strong');s.textContent=kind==='ok'?'✓ ':'✗ ';
+    res.appendChild(s);res.appendChild(document.createTextNode(text));
+    if(kind==='ok'){
+      var b=document.createElement('button');b.type='button';b.className='btn secondary';b.style.marginTop='12px';b.textContent='أعد المحاولة';b.onclick=reset;
+      res.appendChild(document.createElement('br'));res.appendChild(b);b.focus({preventScroll:true});
+    }
+  }
+  function reset(){
+    opts.forEach(function(o){o.disabled=false;o.classList.remove('correct','wrong')});
+    res.className='quiz-res';res.textContent='';opts[0].focus({preventScroll:true});
+  }
+  opts.forEach(function(o,i){
+    o.addEventListener('click',function(){
+      if(i===CORRECT){opts.forEach(function(x){x.disabled=true});o.classList.add('correct');show('ok',OK)}
+      else{o.classList.add('wrong');o.disabled=true;show('bad',BAD)}
+    });
+  });
+})();
+</script>
+</body>
+</html>
